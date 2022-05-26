@@ -1,0 +1,10 @@
+.contain_score {
+  display: flex;
+  gap: 20rem;
+}
+
+@media all and (max-width: 740px) {
+  .contain_score {
+    gap: 2rem;
+  }
+}

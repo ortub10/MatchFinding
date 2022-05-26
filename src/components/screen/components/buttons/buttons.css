@@ -1,0 +1,15 @@
+.contain_buttons {
+  display: flex;
+  gap: 15rem;
+}
+
+.contain_buttons img {
+  width: 5rem;
+  cursor: pointer;
+}
+
+@media all and (max-width: 740px) {
+  .contain_buttons {
+    gap: 2rem;
+  }
+}

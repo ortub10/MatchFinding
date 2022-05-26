@@ -1,0 +1,16 @@
+.score {
+  display: flex;
+  gap: 1rem;
+}
+
+.score img {
+  width: 5rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
