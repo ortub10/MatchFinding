@@ -12,7 +12,7 @@ class Screen extends React.Component {
     isGameOver: false,
   };
 
-  getType = (type) => {
+  upScore = (type) => {
     if (!this.state.isGameOver) {
       this.setState(
         (prev) => {
@@ -31,6 +31,7 @@ class Screen extends React.Component {
     return (
       <div className="screen">
         <Emoji like={this.state.like} unLike={this.state.unLike} />
+
         {this.state.like + this.state.unLike < sport.length ? (
           <MainImage imageObj={sport[this.state.like + this.state.unLike]} />
         ) : this.state.like > this.state.unLike ? (
@@ -43,7 +44,7 @@ class Screen extends React.Component {
           </div>
         )}
 
-        <Buttons sendType={this.getType} />
+        <Buttons sendType={this.upScore} />
       </div>
     );
   }
